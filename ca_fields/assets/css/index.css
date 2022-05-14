@@ -42,10 +42,6 @@
   height: 100%;
 }
 
-.card-border-left-1 > div, .card-border-right-1 > div, .card-border-left-2 > div, .card-border-right-2 > div {
-  margin: 5%;
-}
-
 .card-border-left-1 > div img, .card-border-right-1 > div img, .card-border-left-2 > div img, .card-border-right-2 > div img {
   width: 80px;
   height: 80px;
