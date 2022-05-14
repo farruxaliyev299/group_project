@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    z-index: -1;
+}
+
+#contact{
+    font-family: $primary-font-family;
+    background-color: $secondary-color;
+    padding-bottom: 20vh;
+}
+
+.contact-header , .contact-form{
+    margin-top: 100px;
+    display: inline-block;
+}
+
+.contact-header-thin{
+    font-size: $primary-font-size;
+    margin-bottom: -20px;
+    margin-left: -50px;
+    color: $primary-color;
+}
+
+.contact-header-bold{
+    font-size: $primary-font-size;
+    font-weight: bolder;
+}
+
+.contact-form{
+    form{
+        display: inline-block;
+    }
+}
+
+.f-first-row{
+    display: flex;
+    input{
+        border: none;
+        padding: 15px;
+        margin-right: 10px;
+    }
+}
+
+.f-second-row{
+    display: flex;
+    margin-top: 10px;
+    select{
+        border: none;
+        padding: 15px;
+        margin-right: 10px;
+        color: $primary-color;
+    }
+    input{
+        border: none;
+        padding: 15px;
+        width: 100%;
+        margin-right: 10px;
+    }
+}
+
+.f-third-row{
+    margin-top: 10px;
+    select{
+        border: none;
+        padding: 15px;
+        width: 98%;
+        color: $primary-color;
+    }
+}
+
+.f-fourth-row{
+    margin-top: 10px;
+    button{
+        border: none;
+        padding: 15px;
+        width: 98%;
+        font-weight: bolder;
+        font-size: 18px;
+        background-color: $third-color;
+        color: white;
+        &:hover{
+            background-color: orange;
+        }
+    }
+}
+
+.academy , .education-fields{
+    margin-top: 10%;
+    P{
+        font-weight: bolder;
+    }
+    a{
+        display: block;
+        padding: 5px;
+        text-decoration: none;
+        color: $primary-color;
+    }
+}
+
+.cooperative{
+    margin-top: 10%;
+    a{
+        font-weight: bolder;
+        display: block;
+        padding: 5px;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+#place{
+    width: 100%;
+    background-color: $secondary-color;
+    margin-top: 50px;
+}
+
+.place-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    P{
+        display: inline-block;
+        padding: 10px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    padding: 10px;
+}
+
+#site-footer{
+    margin: 35px;
+}
+
+.license , .logo , .socials{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.socials{
+    i{
+        margin-right: 20px;
+    }
+}
+
+footer{
+    position: sticky;
+    bottom: 0px;
+    z-index: -1;
+}
+
+@media screen and (min-width:768px) and (max-width: 1200px) {
+    .contact-header-thin{
+        margin-left: 0;
+    }
+    .contact-form{
+        form{
+            display: block;
+        }
+        input{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .logo{
+        width: 100%;
+        margin-bottom: 3%;
+    }
+    .socials{
+        i{
+            margin: 0 15px;
+        }
+    }
+
+    .contact-header-thin{
+        margin-left: 0;
+    }
+    .contact-form{
+        display: flex;
+        justify-content: center;
+    }
+    .f-first-row , .f-second-row , .f-third-row , .f-fourth-row{
+        display: block;
+        margin: 0;
+        input{
+            width: 98%;
+            margin: 5px;
+        }
+        select{
+            width: 98%;
+            margin: 5px;
+        }
+        button{
+            width: 98%;
+            margin: 5px;
+        }
+    }
+    .license{
+        display: none;
+    }
+}

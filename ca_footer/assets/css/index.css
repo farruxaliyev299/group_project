@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  z-index: -1;
+}
+
+#contact {
+  font-family: sans-serif;
+  background-color: whitesmoke;
+  padding-bottom: 20vh;
+}
+
+.contact-header, .contact-form {
+  margin-top: 100px;
+  display: inline-block;
+}
+
+.contact-header-thin {
+  font-size: 48px;
+  margin-bottom: -20px;
+  margin-left: -50px;
+  color: grey;
+}
+
+.contact-header-bold {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.contact-form form {
+  display: inline-block;
+}
+
+.f-first-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.f-first-row input {
+  border: none;
+  padding: 15px;
+  margin-right: 10px;
+}
+
+.f-second-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+.f-second-row select {
+  border: none;
+  padding: 15px;
+  margin-right: 10px;
+  color: grey;
+}
+
+.f-second-row input {
+  border: none;
+  padding: 15px;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.f-third-row {
+  margin-top: 10px;
+}
+
+.f-third-row select {
+  border: none;
+  padding: 15px;
+  width: 98%;
+  color: grey;
+}
+
+.f-fourth-row {
+  margin-top: 10px;
+}
+
+.f-fourth-row button {
+  border: none;
+  padding: 15px;
+  width: 98%;
+  font-weight: bolder;
+  font-size: 18px;
+  background-color: #fabb46;
+  color: white;
+}
+
+.f-fourth-row button:hover {
+  background-color: orange;
+}
+
+.academy, .education-fields {
+  margin-top: 10%;
+}
+
+.academy P, .education-fields P {
+  font-weight: bolder;
+}
+
+.academy a, .education-fields a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: grey;
+}
+
+.cooperative {
+  margin-top: 10%;
+}
+
+.cooperative a {
+  font-weight: bolder;
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+#place {
+  width: 100%;
+  background-color: whitesmoke;
+  margin-top: 50px;
+}
+
+.place-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.place-info P {
+  display: inline-block;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#site-footer {
+  margin: 35px;
+}
+
+.license, .logo, .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.socials i {
+  margin-right: 20px;
+}
+
+footer {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0px;
+  z-index: -1;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .contact-header-thin {
+    margin-left: 0;
+  }
+  .contact-form form {
+    display: block;
+  }
+  .contact-form input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+  .socials i {
+    margin: 0 15px;
+  }
+  .contact-header-thin {
+    margin-left: 0;
+  }
+  .contact-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .f-first-row, .f-second-row, .f-third-row, .f-fourth-row {
+    display: block;
+    margin: 0;
+  }
+  .f-first-row input, .f-second-row input, .f-third-row input, .f-fourth-row input {
+    width: 98%;
+    margin: 5px;
+  }
+  .f-first-row select, .f-second-row select, .f-third-row select, .f-fourth-row select {
+    width: 98%;
+    margin: 5px;
+  }
+  .f-first-row button, .f-second-row button, .f-third-row button, .f-fourth-row button {
+    width: 98%;
+    margin: 5px;
+  }
+  .license {
+    display: none;
+  }
+}
+/*# sourceMappingURL=index.css.map */
